@@ -1,0 +1,521 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+.t-left{
+    text-align: left;
+}
+.t-center{
+    text-align: center;
+}
+.t-right{
+    text-align: right;
+}
+/*Header-section-start*/
+.header{
+    padding:10px 0px;
+}
+.header-left{
+    width: 20%;
+}
+.header-left img{
+    width: 100px;
+}
+.header-right{
+    width: 80%;
+}
+.header-right ul{
+    text-align: right;
+}
+.header-right ul li{
+    display: inline-block;
+}
+.header-right ul li a{
+    padding: 15px 20px;
+    display: inline-block;
+    line-height: 37px;
+    font-size: 20px;
+    color: black;
+}
+/*Header-section-end*/
+/*Banner section start*/
+.banner{
+    background: url(img/kobu-agency-IWLR561-Yb-MY-unsplash.jpg) center no-repeat;
+    background-size: cover;
+    padding: 250px 0px;
+    position: relative;
+    z-index: 1;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000008c;
+    z-index: -1;
+}
+.main-banner{}
+.main-banner h4{
+    color: white;
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.main-banner h1{
+    color: white;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+.main-banner a{
+    background: white;
+    display: inline-block;
+    color: gray;
+    padding: 15px 20px;
+    margin: 10px;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: .5s;
+}
+.main-banner a:hover{
+    background: #E5923B;
+    color: white;
+}
+.main-banner a span{
+    margin-right: 10px;
+}
+/*Banner section end*/
+/*Our app section start*/
+.our-app{
+    background: #F7F7F7;
+    padding: 50px 0px;
+}
+.our-app-info{
+    margin-bottom: 45px;
+}
+.our-app-info h1{
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.our-app-info h4{
+    color: gray;
+    font-weight: 400;
+}
+
+.our-app-sections{}
+
+.our-app-section{
+    width: 32%;
+    background: #fff;
+    margin-right: 2%;
+    box-shadow: 0px 0px 20px #00000030;
+}
+
+
+.our-app-section:hover .our-app-section-top{
+    background: #E5923B;
+    color: white;
+}
+.our-app-section:hover .our-app-section-top h1{
+    background: #E5923B;
+    color: white;
+}
+.our-app-section:hover .our-app-section-buttom-btn a{
+    background: #E5923B;
+    color: white;
+}
+
+
+.our-app-section:last-child{
+    margin-right: 0%;
+}
+.our-app-section-top{
+    padding: 27px;
+    transition: .5s;
+}
+.our-app-section-top h3{
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.our-app-section-top h1{
+    background: #F7F7F7;
+    padding: 6px;
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    transition: 1s;
+}
+.our-app-section-top h1 span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.our-app-section-top h4{
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.our-app-section-top p{
+    margin-right: 49px;
+    font-size: 20px;
+    margin-bottom: 21px;
+    font-weight: 400;
+}
+
+.our-app-section-bottom{
+    /* padding-top: 50px; */
+    padding: 51px 0px 27px 30px;
+}
+.our-app-section-bottom ul{
+    margin-bottom: 39px;
+}
+.our-app-section-bottom ul li{
+    font-size: 21px;
+    color: gray;
+    margin-bottom: 20px;
+}
+.our-app-section-bottom ul li span{
+    margin-right: 20px;
+    color: #E5923B;
+}
+.our-app-section-buttom-btn a {
+    background: white;
+    padding: 15px 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0px 0px 19px 0px #0000ff2e;
+    display: inline-block;
+    transition: .5s;
+}
+
+/*Our app section end*/
+/*Team section start*/
+.team-section{
+    padding: 100px 0px;
+}
+.team-section h1{
+    text-align: center;
+    font-size: 44px;
+    font-weight: 400;
+    margin-bottom: 54px;
+}
+.teams{}
+.team{
+    width: 23%;
+    border: 2px solid #E5923B;
+    margin-right: 2%;
+    outline: 2px solid #E5923B;
+    outline-offset: 3px;
+}
+.team:last-child{
+    margin-right: 0%;
+}
+.team img{
+}
+.team-info{
+    padding: 20px;
+}
+.team-info h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.team-info span{
+    color: gray;
+    font-size: 17px;
+}
+/*Team section emd*/
+/*Newsletter start*/
+.newsletter-section{
+    background: #F7F7F7;
+    padding: 50px 0px;
+}
+.newsletter{
+    text-align: center;
+}
+.newsletter h4{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 34px;
+}
+.newsletter h1{
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 34px;
+}
+.newsletter-form{
+    width: 40%;
+    margin: auto;
+}
+.newsletter-form input{
+    display: block;
+    width: 100%;
+    padding: 16px;
+    font-size: 21px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 2px solid #EAB543;
+    outline: none;
+    margin-bottom: 22px;
+}
+.newsletter-form input:focus{
+    outline: none;
+    border: 2px solid rgba(44,76,216,0.795);
+    box-shadow: 2.5px 4.33px 30px 0 rgba(28,65,228,0.63);
+}
+.newsletter-form a{
+    background: #A3CB38;
+    display: inline-block;
+    padding: 15px 61px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    transition: .5s;
+}
+.newsletter-form a:hover{
+    background: #fff;
+    border: 2px solid #A3CB38;
+    color: black;
+}
+/*Newsletter end*/
+/*About section start*/
+.about-section{
+    padding: 20px 0px;
+}
+.about-section h1{
+    text-align: center;
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 37px;
+}
+.about-us{}
+.about-left{
+    width: 40%;
+}
+.about-left img{}
+.about-right{
+    width: 60%;
+    padding: 24px;
+}
+.about-right h3{
+    font-weight: 500;
+    margin-bottom: 29px;
+}
+.about-right p{
+    color: gray;
+    margin-bottom: 39px;
+}
+/*About section end*/
+/*Feedback section start*/
+.feedback-section{
+    background: #F7F7F7;
+    padding: 50px 0px;
+}
+.feedback-heading{
+    margin-bottom: 52px;
+}
+.feedback-heading h4{
+    font-weight: 300;
+    margin-bottom: 28px;
+}
+.feedback-heading h1{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.feedback-items{}
+.feedback-item{
+    width: 32%;
+    margin-right: 2%;
+    border:1px solid gray;
+}
+.feedback-item:last-child{
+    margin-right: 0px;
+}
+.feedback-item-top {
+    background: #fff;
+    padding: 32px 56px 20px 38px;
+    position: relative;
+    box-shadow: 0px 0px 24px #0000ff2b;
+}
+.feedback-item-top::before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    position: absolute;
+    left: 30px;
+    top: 6px;
+    font-size: 84px;
+    color: gray;
+    opacity: .3;
+}
+.feedback-item-top::after{
+  
+     content: "";
+    position: absolute;
+     bottom: -19px;
+     left: 0;
+     right: 0;
+     margin: auto;
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 20px 20px 0 20px;
+     border-color: #ffffff transparent transparent transparent;
+  
+}
+.feedback-item-top p{
+    font-size: 19px;
+    /* text-align: justify; */
+    font-weight: 400;
+    color: #808080b3;
+    line-height: 31px;
+}
+.feedback-item-bottom{
+    width: 55%;
+    margin: auto;
+    padding: 38px 0px 20px 0px;
+}
+.feedback-item-bottom-left{
+    width: 32%;
+    margin-right: 20px;
+}
+.feedback-item-bottom-left img{
+    border: 8px solid burlywood;
+}
+.feedback-item-bottom-right{}
+.feedback-item-bottom-right h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.feedback-item-bottom-right span{
+    color: gray;
+}
+/*Feedback section end*/
+/*Contact section start*/
+.contact-section{
+    padding: 50px 0px;
+}
+.contact{
+    width: 50%;
+    margin: auto;
+}
+.contact h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 23px;
+}
+.contact p{
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 34px;
+}
+.contact input.i-email{
+    display: block;
+    width: 100%;
+    padding: 16px;
+    font-size: 21px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 2px solid #EAB543;
+    outline: none;
+    margin-bottom: 22px;
+}
+.contact input.i-email:focus{
+    outline: none;
+    border: 2px solid rgba(44,76,216,0.795);
+    box-shadow: 2.5px 4.33px 30px 0 rgba(28,65,228,0.63);
+}
+.contact input.i-name{
+    width: 48%;
+    padding: 16px;
+    font-size: 21px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 2px solid #EAB543;
+    outline: none;
+    margin-bottom: 22px;
+    margin-right: 3%;
+}
+.contact input.i-name:focus{
+    outline: none;
+    border: 2px solid rgba(44,76,216,0.795);
+    box-shadow: 2.5px 4.33px 30px 0 rgba(28,65,228,0.63);
+}
+.contact input.i-tel{
+    width: 48%;
+    padding: 16px;
+    font-size: 21px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 2px solid #EAB543;
+    outline: none;
+    margin-bottom: 22px;
+}
+.contact input.i-tel:focus{
+    outline: none;
+    border: 2px solid rgba(44,76,216,0.795);
+    box-shadow: 2.5px 4.33px 30px 0 rgba(28,65,228,0.63);
+}
+.contact textarea{
+    display: block;
+    padding: 16px;
+    font-size: 21px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 2px solid #EAB543;
+    outline: none;
+    margin-bottom: 22px;
+    width: 100%;
+}
+.contact textarea:focus{
+    outline: none;
+    border: 2px solid rgba(44,76,216,0.795);
+    box-shadow: 2.5px 4.33px 30px 0 rgba(28,65,228,0.63);
+}
+.contact button{
+    padding: 15px 77px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #EAB543;
+    border: 1px solid #EAB543;
+    transition: .5s;
+}
+.contact button:hover{
+    background: white;
+}
+
+/*Contact section end*/
+/*Footer section start*/
+.footer-section{
+    padding: 30px;
+}
+.footer-section p{}
+/*Footer section end*/
